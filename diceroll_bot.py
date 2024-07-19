@@ -159,7 +159,7 @@ async def error_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 def main():
     nest_asyncio.apply()
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-    application = Application.builder().token('7012938817:AAH8HCyC-A0VtycjdUbnT7xCGn1Mn_LCiTc').build()
+    application = Application.builder().token('BOT Token here').build()
 
     roll_conv_handler = ConversationHandler(
         entry_points=[CommandHandler('roll', roll)],
